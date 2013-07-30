@@ -158,6 +158,9 @@ Produces:
   `f`. For more information, see {file:SASS_REFERENCE.md#each-destructuring the
   `@each` reference}.
 
+* Comments following selectors in the indented syntax will be correctly
+  converted using `sass-convert`.
+
 ### Backwards Incompatibilities -- Must Read!
 
 * Sass will now throw an error when `@extend` is used to extend a selector
@@ -203,7 +206,7 @@ Produces:
   will be removed eventually. Any code using them should upgrade to the new
   names.
 
-## 3.2.10 (Unreleased)
+## 3.2.10
 
 * Use the Sass logger infrastructure for `@debug` directives.
 
@@ -213,6 +216,9 @@ Produces:
 * Preserve the `!` in `/*! ... */`-style comments.
 
 * Fix a bug where selectors were being incorrectly trimmed when using `@extend`.
+
+* Fix a bug where `sass --unix-newlines` and `sass-convert --in-place` are not
+  working on Windows (thanks [SATO Kentaro](http://www.ranvis.com)).
 
 ## 3.2.9
 

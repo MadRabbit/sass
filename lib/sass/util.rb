@@ -1038,3 +1038,4 @@ MSG
 end
 
 require 'sass/util/multibyte_string_scanner'
+require 'sass/util/normalized_map'
